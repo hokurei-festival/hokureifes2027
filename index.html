@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>北嶺祭2027 公式サイト</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:
+"Yu Mincho",
+"YuMincho",
+"Hiragino Mincho ProN",
+serif;
+background:#f4f7fb;
+color:#333;
+}
+
+nav{
+background:#001f43;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+header{
+
+background:
+linear-gradient(
+rgba(0,0,0,0.6),
+rgba(0,0,0,0.6)
+),
+url("hero.jpg.jpeg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+color:white;
+text-align:center;
+padding:140px 20px;
+
+}
+
+header h1{
+font-size:70px;
+text-shadow:0 0 20px black;
+}
+
+.theme{
+font-size:45px;
+font-weight:bold;
+color:#ffb347;
+margin-top:15px;
+text-shadow:0 0 20px black;
+}
+
+.subtitle{
+font-size:20px;
+margin-top:20px;
+}
+
+.countdown{
+font-size:28px;
+font-weight:bold;
+margin-top:30px;
+}
+
+.button{
+display:inline-block;
+margin:10px;
+margin-top:30px;
+padding:15px 30px;
+background:#f5b400;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#001f43;
+}
+
+.cards{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card a{
+color:#001f43;
+text-decoration:none;
+}
+
+.news{
+background:white;
+padding:20px;
+margin-bottom:10px;
+border-left:5px solid #f5b400;
+border-radius:10px;
+}
+
+table{
+width:100%;
+background:white;
+border-collapse:collapse;
+margin-bottom:30px;
+}
+
+th{
+background:#001f43;
+color:white;
+}
+
+th,td{
+padding:15px;
+border:1px solid #ddd;
+}
+
+details{
+background:white;
+padding:15px;
+margin-bottom:10px;
+border-radius:10px;
+}
+
+footer{
+background:#001f43;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#about">概要</a>
+<a href="#news">お知らせ</a>
+<a href="#events">企画紹介</a>
+<a href="#schedule">日程</a>
+<a href="#map">校内マップ</a>
+<a href="#faq">FAQ</a>
+
+</nav>
+
+<header>
+
+<h1>北嶺祭2027</h1>
+
+<div class="theme">
+Cherich
+</div>
+
+<div class="subtitle">
+2027.07.17 SAT - 07.18 SUN
+</div>
+
+<div id="countdown" class="countdown">
+開催まであと...
+</div>
+
+<a href="#events" class="button">
+企画紹介
+</a>
+
+<a href="#schedule" class="button">
+タイムテーブル
+</a>
+
+<a href="#map" class="button">
+校内マップ
+</a>
+
+</header>
+
+<section id="about">
+
+<h2>北嶺祭2027について</h2>
+
+<div class="card">
+
+<p>
+
+北嶺祭は北嶺中・高等学校最大の学校行事です。
+
+展示や発表、体育館企画、バザーなどを通して、
+北嶺生が日頃の成果を発信します。
+
+</p>
+
+<br>
+
+<h3>テーマ「Cherich」について</h3>
+
+<br>
+
+<p>
+
+「Cherich」には、
+
+仲間と過ごす時間、
+支えてくれる人々、
+文化祭で生まれる思い出を
+
+大切にしてほしいという願いが
+込められています。
+
+北嶺祭2027が、
+一人ひとりにとって特別な思い出となることを目指しています。
+
+</p>
+
+</div>
+
+</section>
+
+<section id="news">
+
+<h2>お知らせ</h2>
+
+<div class="news">
+📢 北嶺祭2027公式サイトを公開しました。
+</div>
+
+<div class="news">
+📢 各企画の詳細を順次公開予定です。
+</div>
+
+</section>
+
+<section id="events">
+
+<h2>企画紹介</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3><a href="junior.html">中学生展示</a></h3>
+</div>
+
+<div class="card">
+<h3><a href="bazaar.html">高校生バザー</a></h3>
+
+</div>
+
+<div class="card">
+<h3><a href="cafeteria.html">食堂メニュー</a></h3>
+</div>
+
+<div class="card">
+<h3><a href="gym.html">体育館企画</a></h3>
+</div>
+
+<div class="card">
+<h3><a href="lost.html">落とし物について</a></h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="junior">
+
+<h2>中学生展示</h2>
+
+<div class="card">
+中学生による展示企画を行います。
+</div>
+
+</section>
+
+<section id="bazaar">
+
+<h2>高校生バザー</h2>
+
+<div class="card">
+高校生による販売企画です。
+</div>
+
+</section>
+
+<section id="cafeteria">
+
+<h2>食堂メニュー</h2>
+
+<div class="card">
+文化祭限定メニューを販売します。
+</div>
+
+</section>
+
+<section id="gym">
+
+<h2>体育館企画</h2>
+
+<div class="card">
+カラオケやミスコン、パフォーマンス企画などを実施します。
+</div>
+
+</section>
+
+<section id="lost">
+
+<h2>🔎 落とし物について</h2>
+
+<div class="card">
+落とし物は1Fのインフォメーションセンターで保管しています。
+</div>
+
+</section>
+
+<section id="schedule">
+
+<section id="schedule">
+
+<h2>タイムテーブル</h2>
+
+<div class="card">
+
+<h3>1日目（7月17日 土曜日）</h3>
+
+<table>
+
+<tr>
+<th>時間</th>
+<th>内容</th>
+</tr>
+
+<tr>
+<td>09:00</td>
+<td>開場</td>
+</tr>
+
+<tr>
+<td>09:30</td>
+<td>一般公開開始</td>
+</tr>
+
+<tr>
+<td>10:00</td>
+<td>中学生展示・高校生バザー開始</td>
+</tr>
+
+<tr>
+<td>13:00</td>
+<td>体育館企画</td>
+</tr>
+
+<tr>
+<td>16:00</td>
+<td>終了</td>
+</tr>
+
+</table>
+
+<br><br>
+
+<h3>2日目（7月18日 日曜日）</h3>
+
+<table>
+
+<tr>
+<th>時間</th>
+<th>内容</th>
+</tr>
+
+<tr>
+<td>09:00</td>
+<td>一般公開開始</td>
+</tr>
+
+<tr>
+<td>10:00</td>
+<td>中学生展示・高校生バザー開始</td>
+</tr>
+
+<tr>
+<td>13:00</td>
+<td>体育館企画</td>
+</tr>
+
+<tr>
+<td>15:00</td>
+<td>閉会式</td>
+</tr>
+
+<tr>
+<td>16:00</td>
+<td>終了</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="map">
+
+<h2>校内マップ</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>1階</h3>
+食堂・受付
+</div>
+
+<div class="card">
+<h3>2階</h3>
+中学生展示
+</div>
+
+<div class="card">
+<h3>3階</h3>
+高校生バザー
+</div>
+
+<div class="card">
+<h3>体育館</h3>
+体育館企画
+</div>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<h2>FAQ</h2>
+
+<details>
+<summary>入場料は必要ですか？</summary>
+無料です。
+</details>
+
+<details>
+<summary>一般来場は可能ですか？</summary>
+学校の案内に従ってご来場ください。
+</details>
+
+</section>
+
+<footer>
+
+© 北嶺祭2027 生徒会執行部
+
+</footer>
+
+<script>
+
+const festivalDate =
+new Date("2027-07-17");
+
+function updateCountdown(){
+
+const today =
+new Date();
+
+const diff =
+festivalDate - today;
+
+const days =
+Math.ceil(
+diff/(1000*60*60*24)
+);
+
+document.getElementById("countdown")
+.innerHTML =
+"開催まであと " + days + " 日";
+
+}
+
+updateCountdown();
+
+</script>
+
+</body>
+</html>
