@@ -53,7 +53,7 @@ linear-gradient(
 rgba(0,0,0,0.6),
 rgba(0,0,0,0.6)
 ),
-url("hero.jpg.jpeg");
+url("hero.jpg.JPG");
 
 background-size:cover;
 background-position:center;
@@ -173,6 +173,16 @@ color:white;
 padding:40px;
 text-align:center;
 }
+.sponsor-box{
+text-align:center;
+}
+
+.sponsor-box img{
+width:90%;
+max-width:900px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
 
 </style>
 
@@ -196,7 +206,7 @@ text-align:center;
 <h1>北嶺祭2027</h1>
 
 <div class="theme">
-Cherich
+「Cherish」
 </div>
 
 <div class="subtitle">
@@ -238,13 +248,13 @@ Cherich
 
 <br>
 
-<h3>テーマ「Cherich」について</h3>
+<h3>テーマ「Cherish」について</h3>
 
 <br>
 
 <p>
 
-「Cherich」には、
+「Cherish」には、
 
 仲間と過ごす時間、
 支えてくれる人々、
@@ -349,7 +359,7 @@ Cherich
 
 <section id="lost">
 
-<h2>🔎 落とし物について</h2>
+<h2>落とし物について</h2>
 
 <div class="card">
 落とし物は1Fのインフォメーションセンターで保管しています。
@@ -473,6 +483,20 @@ Cherich
 
 </section>
 
+<section id="sponsor">
+
+<h2>協賛企業</h2>
+
+<div class="sponsor-box">
+
+<img
+id="sponsorImage"
+src="./ほもず.JPG"
+alt="協賛企業広告">
+
+</div>
+
+</section>
 <section id="faq">
 
 <h2>FAQ</h2>
@@ -497,29 +521,83 @@ Cherich
 
 <script>
 
-const festivalDate =
-new Date("2027-07-17");
+function updateCountdown() {
 
-function updateCountdown(){
+const today = new Date();
 
-const today =
-new Date();
+const year = today.getFullYear();
+const month = today.getMonth() + 1;
+const date = today.getDate();
+
+const countdownEl =
+document.getElementById("countdown");
+
+if (
+year === 2027 &&
+month === 7 &&
+(date === 17 || date === 18)
+) {
+
+countdownEl.innerHTML =
+"🎉 北嶺祭開催中 🎉";
+
+}
+
+else if (
+year > 2027 ||
+(year === 2027 && month > 7) ||
+(year === 2027 && month === 7 && date >= 19)
+) {
+
+countdownEl.innerHTML =
+"北嶺祭2027は終了しました";
+
+}
+
+else {
+
+const startDate =
+new Date(2027, 6, 17);
 
 const diff =
-festivalDate - today;
+startDate - today;
 
 const days =
 Math.ceil(
-diff/(1000*60*60*24)
+diff / (1000 * 60 * 60 * 24)
 );
 
-document.getElementById("countdown")
-.innerHTML =
+countdownEl.innerHTML =
 "開催まであと " + days + " 日";
 
 }
 
+}
+
 updateCountdown();
+const sponsorImages = [
+"./ほもず.JPG",
+"./かわず.JPG",
+];
+
+let sponsorIndex = 0;
+
+setInterval(function(){
+
+sponsorIndex++;
+
+if(
+sponsorIndex >= sponsorImages.length
+){
+sponsorIndex = 0;
+}
+
+document.getElementById(
+"sponsorImage"
+).src =
+sponsorImages[sponsorIndex];
+
+},3000);
 
 </script>
 
