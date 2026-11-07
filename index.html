@@ -492,7 +492,8 @@ box-shadow:0 5px 15px rgba(0,0,0,.2);
 <img
 id="sponsorImage"
 src="./ほもず.JPG"
-alt="協賛企業広告">
+alt="協賛企業広告"
+style="width:90%;max-width:900px;">
 
 </div>
 
@@ -577,7 +578,7 @@ countdownEl.innerHTML =
 updateCountdown();
 const sponsorImages = [
 "./ほもず.JPG",
-"./かわず.JPG",
+"./かわず.JPG"
 ];
 
 let sponsorIndex = 0;
@@ -586,18 +587,15 @@ setInterval(function(){
 
 sponsorIndex++;
 
-if(
-sponsorIndex >= sponsorImages.length
-){
-sponsorIndex = 0;
+if (sponsorIndex >= sponsorImages.length){
+    sponsorIndex = 0;
 }
 
-document.getElementById(
-"sponsorImage"
-).src =
+document.getElementById("sponsorImage").src =
 sponsorImages[sponsorIndex];
 
 },3000);
+
 
 </script>
 
