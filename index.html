@@ -26,8 +26,24 @@ font-family:
 "YuMincho",
 "Hiragino Mincho ProN",
 serif;
+
 background:#f4f7fb;
 color:#333;
+}
+#about{
+background:#ffffff;
+}
+
+#events{
+background:#f7f9fd;
+}
+
+#schedule{
+background:#ffffff;
+}
+
+#access{
+background:#f7f9fd;
 }
 
 nav{
@@ -50,8 +66,8 @@ header{
 
 background:
 linear-gradient(
-rgba(0,0,0,0.6),
-rgba(0,0,0,0.6)
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.55)
 ),
 url("hero.jpg.JPG");
 
@@ -59,17 +75,23 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 
+height:100vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
 color:white;
 text-align:center;
-padding:140px 20px;
 
 }
 
 header h1{
-font-size:70px;
-text-shadow:0 0 20px black;
+font-size:90px;
+letter-spacing:5px;
+text-shadow:0 5px 30px rgba(0,0,0,.5);
 }
-
 .theme{
 font-size:45px;
 font-weight:bold;
@@ -93,12 +115,18 @@ margin-top:30px;
 display:inline-block;
 margin:10px;
 margin-top:30px;
-padding:15px 30px;
-background:#f5b400;
-color:black;
+padding:15px 35px;
+background:#001f43;
+color:white;
 text-decoration:none;
-border-radius:30px;
+border-radius:50px;
 font-weight:bold;
+transition:0.3s;
+}
+
+.button:hover{
+transform:translateY(-3px);
+background:#003366;
 }
 
 section{
@@ -109,6 +137,9 @@ h2{
 text-align:center;
 margin-bottom:40px;
 color:#001f43;
+font-size:52px;
+font-weight:700;
+letter-spacing:2px;
 }
 
 .cards{
@@ -119,11 +150,11 @@ gap:20px;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
+background:#ffffff;
+padding:35px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+border:none;
 }
 
 .card:hover{
@@ -269,6 +300,16 @@ margin-left:-5px;
 <header id="top">
 
 <h1>北嶺祭2027</h1>
+<div style="
+font-size:18px;
+letter-spacing:5px;
+margin-top:10px;
+opacity:0.9;
+">
+
+HOKUREISAI 2027
+
+</div>
 
 <div class="theme">
 「Cherish」
@@ -523,6 +564,8 @@ margin-left:-5px;
 
 <div class="card">
 
+<a href="2027年度平面図.png.png" target="_blank">
+
 <img
 src="2027年度平面図.png.png"
 alt="校内マップ"
@@ -530,6 +573,8 @@ style="
 width:100%;
 border-radius:15px;
 ">
+
+</a>
 
 <p style="margin-top:20px;">
 校内マップです。各企画の場所は当日配布されるパンフレットも併せてご確認ください。
